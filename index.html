@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EFFITRAVAUX - Suivi Prospects</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f6f6f6; color: #333; }
+    .client { background: white; border: 1px solid #ccc; border-radius: 8px; padding: 1em; margin-bottom: 1em; }
+    .header { display: flex; justify-content: space-between; cursor: pointer; background: #F28C28; color: white; padding: 0.5em; border-radius: 5px; }
+    .details { display: none; padding-top: 1em; }
+    .bar { background: #eee; height: 10px; border-radius: 5px; overflow: hidden; margin-top: 0.5em; }
+    .bar-inner { height: 100%; background: #0077C0; width: 65%; }
+  </style>
+  <script>
+    function toggleDetails(id) {
+      var elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1>Suivi des prospects</h1>
+
+    <div class="client">
+      <div class="header" onclick="toggleDetails('details1')">
+        <span>Bertrand (Brive) - 12/02/2024</span>
+        <span>AMO - 200 €</span>
+      </div>
+      <div class="details" id="details1">
+        <p>Marché de travaux TTC : 45 000 €</p>
+        <p>Prestation illiCO HT : 4 500 €</p>
+        <p>Total Prestation + Com. : 5 500 €</p>
+        <p>Écart encaissé vs total : 65%</p>
+        <div class="bar"><div class="bar-inner"></div></div>
+        <hr>
+        <p><strong>Détails financiers :</strong></p>
+        <p>Acompte : 1 000 €</p>
+        <p>Situation 1 : 200 €</p>
+        <p>Situation 2 : 100 €</p>
+        <p>Situation 3 : 800 €</p>
+        <p>Solde : 1 000 €</p>
+        <p>Commission lot 1 à 18 : 500 € x 18</p>
+      </div>
+    </div>
+    
+    <div class="client">
+      <div class="header" onclick="toggleDetails('details2')">
+        <span>Durand (Tulle) - 18/03/2024</span>
+        <span>MOE - 150 €</span>
+      </div>
+      <div class="details" id="details2">
+        <p>Marché de travaux TTC : 45 000 €</p>
+        <p>Prestation illiCO HT : 4 500 €</p>
+        <p>Total Prestation + Com. : 5 500 €</p>
+        <p>Écart encaissé vs total : 65%</p>
+        <div class="bar"><div class="bar-inner"></div></div>
+        <hr>
+        <p><strong>Détails financiers :</strong></p>
+        <p>Acompte : 1 000 €</p>
+        <p>Situation 1 : 200 €</p>
+        <p>Situation 2 : 100 €</p>
+        <p>Situation 3 : 800 €</p>
+        <p>Solde : 1 000 €</p>
+        <p>Commission lot 1 à 18 : 500 € x 18</p>
+      </div>
+    </div>
+    
+    <div class="client">
+      <div class="header" onclick="toggleDetails('details3')">
+        <span>Martin (Terrasson) - 25/05/2024</span>
+        <span>ESTIMO - 180 €</span>
+      </div>
+      <div class="details" id="details3">
+        <p>Marché de travaux TTC : 45 000 €</p>
+        <p>Prestation illiCO HT : 4 500 €</p>
+        <p>Total Prestation + Com. : 5 500 €</p>
+        <p>Écart encaissé vs total : 65%</p>
+        <div class="bar"><div class="bar-inner"></div></div>
+        <hr>
+        <p><strong>Détails financiers :</strong></p>
+        <p>Acompte : 1 000 €</p>
+        <p>Situation 1 : 200 €</p>
+        <p>Situation 2 : 100 €</p>
+        <p>Situation 3 : 800 €</p>
+        <p>Solde : 1 000 €</p>
+        <p>Commission lot 1 à 18 : 500 € x 18</p>
+      </div>
+    </div>
+    </body></html>
